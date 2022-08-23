@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_products_products",
+  "info": {
+    "displayName": "product",
+    "icon": "ad"
+  },
+  "options": {},
+  "attributes": {
+    "product_hr": {
+      "type": "boolean",
+      "required": true
+    },
+    "product_elements": {
+      "type": "json",
+      "required": true
+    }
+  }
+}

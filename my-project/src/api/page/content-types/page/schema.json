@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "singularName": "page",
+    "pluralName": "pages",
+    "displayName": "PageWithDynZones",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "PublishedDate": {
+      "type": "datetime"
+    },
+    "HomePage": {
+      "type": "dynamiczone",
+      "components": [
+        "modules.hero",
+        "modules.category-taxon-shops",
+        "products.product",
+        "seo.metadata"
+      ]
+    },
+    "CategoryHomePage": {
+      "type": "dynamiczone",
+      "components": [
+        "modules.hero",
+        "le-scoop.markup",
+        "products.product",
+        "seo.metadata"
+      ]
+    },
+    "InformationPage": {
+      "type": "dynamiczone",
+      "components": [
+        "seo.metadata",
+        "le-scoop.markup"
+      ]
+    },
+    "LeScoopStory": {
+      "type": "dynamiczone",
+      "components": [
+        "seo.metadata",
+        "products.product",
+        "modules.hero",
+        "le-scoop.markup"
+      ]
+    }
+  }
+}

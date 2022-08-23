@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_modules_markups",
+  "info": {
+    "displayName": "Markup",
+    "icon": "align-justify",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Markup": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

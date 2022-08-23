@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_seo_metadata",
+  "info": {
+    "displayName": "Metadata",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "MetaTitle": {
+      "type": "string",
+      "required": true
+    },
+    "MetaDescription": {
+      "type": "text",
+      "required": true,
+      "maxLength": 170
+    },
+    "Header": {
+      "type": "string",
+      "required": true
+    },
+    "MetaTags": {
+      "type": "string"
+    }
+  }
+}

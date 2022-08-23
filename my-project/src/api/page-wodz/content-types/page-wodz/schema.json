@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "page_wodzs",
+  "info": {
+    "singularName": "page-wodz",
+    "pluralName": "page-wodzs",
+    "displayName": "PageWODZ"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "PublishDate": {
+      "type": "datetime"
+    },
+    "Content": {
+      "type": "dynamiczone",
+      "components": [
+        "le-scoop.markup",
+        "modules.category-taxon-shops",
+        "modules.hero",
+        "products.product",
+        "seo.metadata"
+      ]
+    }
+  }
+}
