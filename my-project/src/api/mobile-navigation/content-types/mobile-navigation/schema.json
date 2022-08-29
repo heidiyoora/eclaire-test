@@ -1,0 +1,22 @@
+{
+  "kind": "singleType",
+  "collectionName": "mobile_navigations",
+  "info": {
+    "singularName": "mobile-navigation",
+    "pluralName": "mobile-navigations",
+    "displayName": "mobile-navigation",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "entries": {
+      "displayName": "mobile-navigation-entry",
+      "type": "component",
+      "repeatable": true,
+      "component": "single-types.mobile-navigation-entry"
+    }
+  }
+}

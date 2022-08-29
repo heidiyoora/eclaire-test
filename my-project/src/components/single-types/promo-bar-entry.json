@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_single_types_promo_bar_entries",
+  "info": {
+    "displayName": "promo-bar-entry",
+    "icon": "align-center",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string",
+      "required": true
+    },
+    "start": {
+      "type": "datetime"
+    },
+    "end": {
+      "type": "datetime"
+    },
+    "ignoreDates": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}
