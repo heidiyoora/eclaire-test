@@ -50,6 +50,14 @@
         "products.product",
         "seo.metadata"
       ]
+    },
+    "publish_at": {
+      "pluginOptions": {
+        "versions": {
+          "versioned": true
+        }
+      },
+      "type": "datetime"
     }
   }
 }
