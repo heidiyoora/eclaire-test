@@ -58,6 +58,16 @@
         }
       },
       "type": "datetime"
+    },
+    "tags": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "versions": {
+          "versioned": true
+        }
+      },
+      "component": "taxonomy.tag"
     }
   }
 }
