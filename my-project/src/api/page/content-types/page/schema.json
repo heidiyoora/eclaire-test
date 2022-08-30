@@ -44,10 +44,6 @@
       },
       "type": "dynamiczone",
       "components": [
-        "le-scoop.markup",
-        "modules.category-taxon-shops",
-        "modules.hero",
-        "products.product",
         "seo.metadata"
       ]
     },
