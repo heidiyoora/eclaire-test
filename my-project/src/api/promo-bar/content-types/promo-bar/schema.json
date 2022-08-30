@@ -1,0 +1,22 @@
+{
+  "kind": "singleType",
+  "collectionName": "promo_bars",
+  "info": {
+    "singularName": "promo-bar",
+    "pluralName": "promo-bars",
+    "displayName": "promo-bar",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "entries": {
+      "displayName": "promo-bar-entry",
+      "type": "component",
+      "repeatable": true,
+      "component": "single-types.promo-bar-entry"
+    }
+  }
+}
