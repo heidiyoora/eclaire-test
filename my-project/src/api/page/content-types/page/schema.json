@@ -59,15 +59,39 @@
       },
       "type": "datetime"
     },
-    "tags": {
-      "type": "component",
-      "repeatable": true,
+    "hierarchicalMenu": {
       "pluginOptions": {
         "versions": {
-          "versioned": true
+          "versioned": false
         }
       },
-      "component": "taxonomy.tag"
+      "type": "enumeration",
+      "enum": [
+        "parenting_work-money",
+        "parenting_relationships",
+        "parenting_stories",
+        "parenting_styles",
+        "parenting_family-dynamics",
+        "health_self-care",
+        "health_kids",
+        "development_baby",
+        "development_toddler",
+        "development_kids",
+        "maternity_pregnancy",
+        "maternity_postpartum",
+        "lifestyle_travel",
+        "lifestyle_style",
+        "lifestyle_nursery",
+        "lifestyle_horoscope",
+        "lifestyle_entertainment",
+        "gifts_kids",
+        "gifts_holiday",
+        "activities_arts-crafts",
+        "activities_books",
+        "activities_things-to-do",
+        "activities_cooking",
+        "activities_holiday"
+      ]
     }
   }
 }
