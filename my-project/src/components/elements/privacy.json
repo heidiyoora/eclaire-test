@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_elements_privacies",
+  "info": {
+    "displayName": "privacy",
+    "icon": "american-sign-language-interpreting"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "text"
+    }
+  }
+}

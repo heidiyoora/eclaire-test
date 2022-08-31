@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_modules_category_taxon_shops",
+  "info": {
+    "displayName": "category_taxon_shop",
+    "icon": "atom"
+  },
+  "options": {},
+  "attributes": {
+    "one_line": {
+      "type": "boolean"
+    },
+    "elements": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.category-taxon-shop"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "as_taxon": {
+      "type": "boolean"
+    },
+    "bg_doodles": {
+      "type": "boolean"
+    },
+    "subheading": {
+      "type": "string"
+    },
+    "title_url": {
+      "type": "string"
+    },
+    "cta": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_modules_privacies",
+  "info": {
+    "displayName": "privacy",
+    "icon": "ambulance"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "elements": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.privacy"
+    }
+  }
+}

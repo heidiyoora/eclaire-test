@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_modules_taxon_products",
+  "info": {
+    "displayName": "taxon_products",
+    "icon": "baby-carriage"
+  },
+  "options": {},
+  "attributes": {
+    "title_url": {
+      "type": "string"
+    },
+    "icon_alt": {
+      "type": "string"
+    },
+    "style": {
+      "type": "enumeration",
+      "enum": [
+        "default"
+      ]
+    },
+    "path": {
+      "type": "string"
+    },
+    "is_slider": {
+      "type": "boolean"
+    },
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_modules_videos",
+  "info": {
+    "displayName": "video",
+    "icon": "arrow-alt-circle-right"
+  },
+  "options": {},
+  "attributes": {
+    "video_id": {
+      "type": "string"
+    }
+  }
+}

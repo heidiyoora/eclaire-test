@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_modules_heroes",
+  "info": {
+    "displayName": "hero",
+    "icon": "arrow-alt-circle-right"
+  },
+  "options": {},
+  "attributes": {
+    "elements": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.hero"
+    }
+  }
+}

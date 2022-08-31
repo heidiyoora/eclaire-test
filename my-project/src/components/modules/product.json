@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_modules_products",
+  "info": {
+    "displayName": "product",
+    "icon": "baby-carriage",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "elements": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.product"
+    }
+  }
+}

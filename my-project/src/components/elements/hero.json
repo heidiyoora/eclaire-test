@@ -1,0 +1,60 @@
+{
+  "collectionName": "components_elements_heroes",
+  "info": {
+    "displayName": "hero",
+    "icon": "arrow-circle-left"
+  },
+  "options": {},
+  "attributes": {
+    "interviewer": {
+      "type": "string"
+    },
+    "styling": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "image_desktop": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "illustration": {
+      "type": "string"
+    },
+    "image_mobile_alt": {
+      "type": "string"
+    },
+    "image_mobile": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "cta": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "writer": {
+      "type": "string"
+    },
+    "photography": {
+      "type": "string"
+    },
+    "subheading": {
+      "type": "string"
+    },
+    "desktop_alt": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    }
+  }
+}

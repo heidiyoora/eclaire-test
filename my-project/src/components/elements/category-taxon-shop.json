@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_elements_category_taxon_shops",
+  "info": {
+    "displayName": "category_taxon_shop",
+    "icon": "award"
+  },
+  "options": {},
+  "attributes": {
+    "cta": {
+      "type": "string"
+    },
+    "path": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "icon_alt": {
+      "type": "string"
+    }
+  }
+}
