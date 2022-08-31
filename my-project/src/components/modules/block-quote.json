@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_modules_block_quotes",
+  "info": {
+    "displayName": "block_quote",
+    "icon": "arrow-alt-circle-left"
+  },
+  "options": {},
+  "attributes": {
+    "quote": {
+      "type": "text"
+    }
+  }
+}

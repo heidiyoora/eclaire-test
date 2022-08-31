@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_modules_image_shoppables",
+  "info": {
+    "displayName": "image_shoppable",
+    "icon": "align-right"
+  },
+  "options": {},
+  "attributes": {
+    "alt_text": {
+      "type": "string"
+    },
+    "elements": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.product"
+    },
+    "video_url": {
+      "type": "string"
+    },
+    "image_mobile": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "image_desktop": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "photo_credit": {
+      "type": "string"
+    }
+  }
+}

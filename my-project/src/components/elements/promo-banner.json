@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_elements_promo_banners",
+  "info": {
+    "displayName": "promo_banner",
+    "icon": "american-sign-language-interpreting"
+  },
+  "options": {},
+  "attributes": {
+    "url": {
+      "type": "string"
+    },
+    "image_mobile": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "image_desktop": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "mobile_alt": {
+      "type": "string"
+    },
+    "desktop_alt": {
+      "type": "string"
+    }
+  }
+}

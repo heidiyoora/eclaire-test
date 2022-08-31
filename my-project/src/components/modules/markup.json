@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_modules_markups",
+  "info": {
+    "displayName": "markup",
+    "icon": "align-right"
+  },
+  "options": {},
+  "attributes": {
+    "markup": {
+      "type": "text"
+    }
+  }
+}

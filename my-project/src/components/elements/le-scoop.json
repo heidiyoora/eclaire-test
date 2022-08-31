@@ -1,0 +1,50 @@
+{
+  "collectionName": "components_elements_le_scoops",
+  "info": {
+    "displayName": "le_scoop"
+  },
+  "options": {},
+  "attributes": {
+    "story_id": {
+      "type": "integer"
+    },
+    "image_square": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "url": {
+      "type": "string"
+    },
+    "cta": {
+      "type": "string"
+    },
+    "image_square_alt": {
+      "type": "string"
+    },
+    "image_landscape": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "description": {
+      "type": "text"
+    },
+    "subheading": {
+      "type": "string"
+    },
+    "image_landscape_alt": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    }
+  }
+}

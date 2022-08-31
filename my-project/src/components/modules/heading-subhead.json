@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_modules_heading_subheads",
+  "info": {
+    "displayName": "heading_subhead",
+    "icon": "arrow-alt-circle-up"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "subheading": {
+      "type": "string"
+    },
+    "heading_top": {
+      "type": "boolean"
+    }
+  }
+}

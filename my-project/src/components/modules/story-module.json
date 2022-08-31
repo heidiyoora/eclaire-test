@@ -1,0 +1,51 @@
+{
+  "collectionName": "components_modules_story_modules",
+  "info": {
+    "displayName": "story_module",
+    "icon": "arrow-alt-circle-up"
+  },
+  "options": {},
+  "attributes": {
+    "heading_url": {
+      "type": "string"
+    },
+    "products": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.product"
+    },
+    "image_mobile": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "image_desktop": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "position": {
+      "type": "enumeration",
+      "enum": [
+        "default",
+        "reversed"
+      ]
+    },
+    "description": {
+      "type": "text"
+    },
+    "image_mobile_alt": {
+      "type": "string"
+    },
+    "image_desktop_alt": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_modules_paragraphs",
+  "info": {
+    "displayName": "paragraph",
+    "icon": "ambulance"
+  },
+  "options": {},
+  "attributes": {
+    "paragraph": {
+      "type": "text"
+    }
+  }
+}

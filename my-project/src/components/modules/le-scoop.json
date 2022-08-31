@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_modules_le_scoops",
+  "info": {
+    "displayName": "le_scoop",
+    "icon": "arrow-alt-circle-right"
+  },
+  "options": {},
+  "attributes": {
+    "le_scoop": {
+      "displayName": "le_scoop",
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.le-scoop"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "collectionName": "components_modules_rich_text_images",
+  "info": {
+    "displayName": "rich_text_image",
+    "icon": "arrow-alt-circle-right"
+  },
+  "options": {},
+  "attributes": {
+    "copy": {
+      "type": "text"
+    },
+    "title": {
+      "type": "string"
+    },
+    "image_alt": {
+      "type": "string"
+    },
+    "position": {
+      "type": "enumeration",
+      "enum": [
+        "image_right",
+        "image_left"
+      ]
+    },
+    "elements": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.product"
+    },
+    "image_mobile": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "image_desktop": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

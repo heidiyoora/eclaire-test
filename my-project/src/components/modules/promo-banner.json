@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_modules_promo_banners",
+  "info": {
+    "displayName": "promo_banner",
+    "icon": "align-center"
+  },
+  "options": {},
+  "attributes": {
+    "elements": {
+      "displayName": "promo_banner",
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.promo-banner"
+    },
+    "headline": {
+      "type": "string"
+    }
+  }
+}

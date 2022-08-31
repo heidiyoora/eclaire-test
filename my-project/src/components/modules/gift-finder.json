@@ -1,0 +1,47 @@
+{
+  "collectionName": "components_modules_gift_finders",
+  "info": {
+    "displayName": "gift_finder",
+    "icon": "apple-alt"
+  },
+  "options": {},
+  "attributes": {
+    "cta_age": {
+      "type": "string"
+    },
+    "default_url": {
+      "type": "string"
+    },
+    "image_desktop": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "cta_theme": {
+      "type": "string"
+    },
+    "cta_price": {
+      "type": "decimal"
+    },
+    "image_alt": {
+      "type": "string"
+    },
+    "subheading": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "square_view": {
+      "type": "boolean"
+    },
+    "elements": {
+      "displayName": "gift_finder_themes",
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.gift-finder-themes"
+    }
+  }
+}
