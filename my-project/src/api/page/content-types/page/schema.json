@@ -58,6 +58,40 @@
         }
       },
       "type": "datetime"
+    },
+    "hierarchicalMenu": {
+      "pluginOptions": {
+        "versions": {
+          "versioned": false
+        }
+      },
+      "type": "enumeration",
+      "enum": [
+        "parenting > work-money",
+        "parenting > relationships",
+        "parenting > stories",
+        "parenting > styles",
+        "parenting > family-dynamics",
+        "health > self-care",
+        "health > kids",
+        "development > baby",
+        "development > toddler",
+        "development > kids",
+        "maternity > pregnancy",
+        "maternity > postpartum",
+        "lifestyle > travel",
+        "lifestyle > style",
+        "lifestyle > nursery",
+        "lifestyle > horoscope",
+        "lifestyle > entertainment",
+        "gifts > kids",
+        "gifts > holiday",
+        "activities > arts-crafts",
+        "activities > books",
+        "activities > things-to-do",
+        "activities > cooking",
+        "activities > holiday"
+      ]
     }
   }
 }
