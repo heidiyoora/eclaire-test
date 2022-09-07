@@ -7,7 +7,7 @@
   },
   "options": {},
   "attributes": {
-    "elements": {
+    "products": {
       "type": "component",
       "repeatable": true,
       "component": "elements.product"

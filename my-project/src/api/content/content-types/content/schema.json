@@ -1,0 +1,76 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contents",
+  "info": {
+    "singularName": "content",
+    "pluralName": "contents",
+    "displayName": "Content",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "pluginOptions": {
+        "versions": {
+          "versioned": true
+        }
+      },
+      "type": "string"
+    },
+    "page": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::page.page",
+      "inversedBy": "contents"
+    },
+    "publishDate": {
+      "pluginOptions": {
+        "versions": {
+          "versioned": true
+        }
+      },
+      "type": "datetime"
+    },
+    "modules": {
+      "pluginOptions": {
+        "versions": {
+          "versioned": true
+        }
+      },
+      "type": "dynamiczone",
+      "components": [
+        "modules.about",
+        "modules.accordion",
+        "modules.banner-row",
+        "modules.block-quote",
+        "modules.category-taxon-shop",
+        "modules.circle-banner",
+        "modules.double-banner",
+        "modules.dynamic-info",
+        "modules.gift-finder",
+        "modules.heading-subhead",
+        "modules.heading",
+        "modules.hero",
+        "modules.image-banner",
+        "modules.image-shoppable",
+        "modules.le-scoop",
+        "modules.markup",
+        "modules.newletter",
+        "modules.paragraph",
+        "modules.privacy",
+        "modules.product",
+        "modules.promo-banner",
+        "modules.rich-text-image",
+        "modules.social-share",
+        "modules.story-module",
+        "modules.story-place",
+        "modules.taxon-products",
+        "modules.two-image",
+        "modules.video"
+      ]
+    }
+  }
+}

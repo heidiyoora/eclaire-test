@@ -23,11 +23,6 @@
     },
     "image_alt": {
       "type": "string"
-    },
-    "meta": {
-      "type": "component",
-      "repeatable": false,
-      "component": "module-meta.module"
     }
   }
 }

@@ -12,10 +12,6 @@
     },
     "backup_object_id": {
       "type": "string"
-    },
-    "position": {
-      "type": "integer",
-      "required": true
     }
   }
 }
