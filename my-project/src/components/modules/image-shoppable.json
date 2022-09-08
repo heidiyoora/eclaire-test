@@ -2,11 +2,12 @@
   "collectionName": "components_modules_image_shoppables",
   "info": {
     "displayName": "image_shoppable",
-    "icon": "align-right"
+    "icon": "align-right",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "alt_text": {
+    "image_alt": {
       "type": "string"
     },
     "elements": {
@@ -18,21 +19,26 @@
       "type": "string"
     },
     "image_mobile": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "image_desktop": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "photo_credit": {
       "type": "string"
+    },
+    "hr": {
+      "type": "boolean"
     }
   }
 }

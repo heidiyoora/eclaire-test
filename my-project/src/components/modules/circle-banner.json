@@ -2,22 +2,24 @@
   "collectionName": "components_modules_circle_banners",
   "info": {
     "displayName": "circle_banner",
-    "icon": "arrow-circle-left"
+    "icon": "arrow-circle-left",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "text": {
+    "link_text": {
       "type": "text"
     },
     "url": {
       "type": "string"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "title": {
       "type": "string"
@@ -27,6 +29,9 @@
     },
     "description": {
       "type": "text"
+    },
+    "hr": {
+      "type": "boolean"
     }
   }
 }

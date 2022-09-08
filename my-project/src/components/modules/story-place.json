@@ -2,7 +2,8 @@
   "collectionName": "components_modules_story_places",
   "info": {
     "displayName": "story_place",
-    "icon": "arrow-alt-circle-up"
+    "icon": "arrow-alt-circle-up",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -17,6 +18,9 @@
     },
     "description": {
       "type": "text"
+    },
+    "hr": {
+      "type": "boolean"
     }
   }
 }

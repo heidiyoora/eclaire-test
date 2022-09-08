@@ -2,7 +2,8 @@
   "collectionName": "components_modules_newletters",
   "info": {
     "displayName": "newletter",
-    "icon": "asterisk"
+    "icon": "asterisk",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -13,6 +14,9 @@
       "type": "component",
       "repeatable": true,
       "component": "elements.newlsetter"
+    },
+    "hr": {
+      "type": "boolean"
     }
   }
 }

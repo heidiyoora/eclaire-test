@@ -17,7 +17,8 @@ module.exports = createCoreController('api::page.page', ({strapi}) => ({
         // create populate query for page and content specific data
         // will probably need to add a few more
         'socialImage', 'contents.modules.image',
-        'contents.modules.elements', 'contents.modules.products'
+        'contents.modules.elements', 'contents.modules.products',
+        'contents.modules.box_elements', 'contents.modules.circle_elements'
       ] }
     });
 

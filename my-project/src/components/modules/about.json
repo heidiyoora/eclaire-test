@@ -23,6 +23,9 @@
     },
     "image_alt": {
       "type": "string"
+    },
+    "hr": {
+      "type": "boolean"
     }
   }
 }

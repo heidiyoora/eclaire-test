@@ -2,7 +2,8 @@
   "collectionName": "components_modules_story_modules",
   "info": {
     "displayName": "story_module",
-    "icon": "arrow-alt-circle-up"
+    "icon": "arrow-alt-circle-up",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -15,18 +16,20 @@
       "component": "elements.product"
     },
     "image_mobile": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "image_desktop": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "position": {
       "type": "enumeration",
@@ -46,6 +49,9 @@
     },
     "heading": {
       "type": "string"
+    },
+    "hr": {
+      "type": "boolean"
     }
   }
 }

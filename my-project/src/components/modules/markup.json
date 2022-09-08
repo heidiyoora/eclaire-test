@@ -2,12 +2,16 @@
   "collectionName": "components_modules_markups",
   "info": {
     "displayName": "markup",
-    "icon": "align-right"
+    "icon": "align-right",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "markup": {
       "type": "text"
+    },
+    "hr": {
+      "type": "boolean"
     }
   }
 }

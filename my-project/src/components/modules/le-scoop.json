@@ -2,15 +2,19 @@
   "collectionName": "components_modules_le_scoops",
   "info": {
     "displayName": "le_scoop",
-    "icon": "arrow-alt-circle-right"
+    "icon": "arrow-alt-circle-right",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "le_scoop": {
+    "elements": {
       "displayName": "le_scoop",
       "type": "component",
       "repeatable": true,
       "component": "elements.le-scoop"
+    },
+    "hr": {
+      "type": "boolean"
     }
   }
 }

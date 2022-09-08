@@ -2,7 +2,8 @@
   "collectionName": "components_modules_rich_text_images",
   "info": {
     "displayName": "rich_text_image",
-    "icon": "arrow-alt-circle-right"
+    "icon": "arrow-alt-circle-right",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -22,24 +23,29 @@
         "image_left"
       ]
     },
-    "elements": {
+    "products": {
       "type": "component",
       "repeatable": true,
       "component": "elements.product"
     },
     "image_mobile": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "image_desktop": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "hr": {
+      "type": "boolean"
     }
   }
 }

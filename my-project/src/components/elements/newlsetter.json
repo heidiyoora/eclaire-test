@@ -2,22 +2,24 @@
   "collectionName": "components_elements_newlsetters",
   "info": {
     "displayName": "newlsetter",
-    "icon": "atlas"
+    "icon": "atlas",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "cta": {
       "type": "string"
     },
-    "heading": {
+    "url": {
       "type": "string"
     },
     "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "icon_alt": {
       "type": "string"
