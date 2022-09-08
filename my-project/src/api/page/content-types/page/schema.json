@@ -10,11 +10,7 @@
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {
-    "versions": {
-      "versioned": true
-    }
-  },
+  "pluginOptions": {},
   "attributes": {
     "Title": {
       "pluginOptions": {
@@ -34,22 +30,7 @@
       },
       "type": "string",
       "required": true,
-      "unique": false
-    },
-    "modules": {
-      "pluginOptions": {
-        "versions": {
-          "versioned": true
-        }
-      },
-      "type": "dynamiczone",
-      "components": [
-        "le-scoop.markup",
-        "modules.category-taxon-shops",
-        "modules.hero",
-        "products.product",
-        "seo.metadata"
-      ]
+      "unique": true
     },
     "publish_at": {
       "pluginOptions": {
@@ -92,6 +73,84 @@
         "activities > cooking",
         "activities > holiday"
       ]
+    },
+    "type": {
+      "pluginOptions": {
+        "versions": {
+          "versioned": true
+        }
+      },
+      "type": "enumeration",
+      "enum": [
+        "page",
+        "story",
+        "pillar"
+      ]
+    },
+    "background": {
+      "pluginOptions": {
+        "versions": {
+          "versioned": true
+        }
+      },
+      "type": "enumeration",
+      "enum": [
+        "default",
+        "white",
+        "cream",
+        "holiday",
+        "neon"
+      ]
+    },
+    "socialImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "pluginOptions": {
+        "versions": {
+          "versioned": true
+        }
+      }
+    },
+    "inLeScoopModule": {
+      "pluginOptions": {
+        "versions": {
+          "versioned": true
+        }
+      },
+      "type": "boolean",
+      "default": false
+    },
+    "innerPageNavigation": {
+      "pluginOptions": {
+        "versions": {
+          "versioned": true
+        }
+      },
+      "type": "boolean",
+      "default": false
+    },
+    "metaData": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "versions": {
+          "versioned": true
+        }
+      },
+      "component": "seo.metadata"
+    },
+    "contents": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::content.content",
+      "mappedBy": "page"
     }
   }
 }

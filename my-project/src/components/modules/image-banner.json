@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_modules_image_banners",
+  "info": {
+    "displayName": "image_banner",
+    "icon": "arrow-alt-circle-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "image_alt": {
+      "type": "string"
+    },
+    "image_mobile": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "image_desktop": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "hr": {
+      "type": "boolean"
+    }
+  }
+}

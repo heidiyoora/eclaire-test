@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_modules_headings",
+  "info": {
+    "displayName": "heading",
+    "icon": "arrow-circle-left",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "hr": {
+      "type": "boolean"
+    }
+  }
+}

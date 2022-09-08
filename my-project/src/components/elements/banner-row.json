@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_elements_banner_rows",
+  "info": {
+    "displayName": "banner_row",
+    "icon": "arrow-circle-down"
+  },
+  "options": {},
+  "attributes": {
+    "cta": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "icon_alt": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "image_alt": {
+      "type": "string"
+    }
+  }
+}

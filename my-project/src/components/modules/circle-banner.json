@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_modules_circle_banners",
+  "info": {
+    "displayName": "circle_banner",
+    "icon": "arrow-circle-left",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "link_text": {
+      "type": "text"
+    },
+    "url": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "image_alt": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "hr": {
+      "type": "boolean"
+    }
+  }
+}

@@ -1,16 +1,19 @@
 {
-  "collectionName": "components_modules_heroes",
+  "collectionName": "components_modules_newletters",
   "info": {
-    "displayName": "hero",
-    "icon": "arrow-alt-circle-right",
+    "displayName": "newletter",
+    "icon": "asterisk",
     "description": ""
   },
   "options": {},
   "attributes": {
+    "heading": {
+      "type": "string"
+    },
     "elements": {
       "type": "component",
       "repeatable": true,
-      "component": "elements.hero"
+      "component": "elements.newlsetter"
     },
     "hr": {
       "type": "boolean"

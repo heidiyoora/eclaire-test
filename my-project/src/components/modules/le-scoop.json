@@ -1,16 +1,17 @@
 {
-  "collectionName": "components_modules_heroes",
+  "collectionName": "components_modules_le_scoops",
   "info": {
-    "displayName": "hero",
+    "displayName": "le_scoop",
     "icon": "arrow-alt-circle-right",
     "description": ""
   },
   "options": {},
   "attributes": {
     "elements": {
+      "displayName": "le_scoop",
       "type": "component",
       "repeatable": true,
-      "component": "elements.hero"
+      "component": "elements.le-scoop"
     },
     "hr": {
       "type": "boolean"

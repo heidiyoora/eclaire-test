@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_modules_accordions",
+  "info": {
+    "displayName": "accordion",
+    "icon": "archway",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "text"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "hr": {
+      "type": "boolean"
+    }
+  }
+}

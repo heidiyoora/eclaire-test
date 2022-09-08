@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_modules_story_places",
+  "info": {
+    "displayName": "story_place",
+    "icon": "arrow-alt-circle-up",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "left": {
+      "type": "text"
+    },
+    "right": {
+      "type": "text"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "hr": {
+      "type": "boolean"
+    }
+  }
+}

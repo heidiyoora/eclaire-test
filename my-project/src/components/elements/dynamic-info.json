@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_elements_dynamic_infos",
+  "info": {
+    "displayName": "dynamic_info",
+    "icon": "arrow-circle-down"
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "paragraph",
+        "definition",
+        "subhead",
+        "list"
+      ]
+    },
+    "paragraph_text": {
+      "type": "text"
+    },
+    "term": {
+      "type": "string"
+    },
+    "definition": {
+      "type": "text"
+    },
+    "subhead": {
+      "type": "string"
+    },
+    "subhead_text": {
+      "type": "text"
+    },
+    "list": {
+      "type": "string"
+    }
+  }
+}

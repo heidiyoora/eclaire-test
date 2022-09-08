@@ -1,0 +1,52 @@
+{
+  "collectionName": "components_modules_two_images",
+  "info": {
+    "displayName": "two_image",
+    "icon": "american-sign-language-interpreting",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "left_image_alt": {
+      "type": "string"
+    },
+    "right_image_alt": {
+      "type": "string"
+    },
+    "left_image_mobile": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "left_image_desktop": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "right_image_mobile": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "right_image_desktop": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "hr": {
+      "type": "boolean"
+    }
+  }
+}

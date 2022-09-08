@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_elements_gift_finder_themes",
+  "info": {
+    "displayName": "gift_finder_themes",
+    "icon": "ambulance"
+  },
+  "options": {},
+  "attributes": {
+    "value": {
+      "type": "string"
+    },
+    "display": {
+      "type": "string"
+    }
+  }
+}

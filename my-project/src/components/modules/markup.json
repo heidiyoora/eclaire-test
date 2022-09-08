@@ -1,15 +1,17 @@
 {
   "collectionName": "components_modules_markups",
   "info": {
-    "displayName": "Markup",
-    "icon": "align-justify",
+    "displayName": "markup",
+    "icon": "align-right",
     "description": ""
   },
   "options": {},
   "attributes": {
-    "Markup": {
-      "type": "richtext",
-      "required": true
+    "markup": {
+      "type": "text"
+    },
+    "hr": {
+      "type": "boolean"
     }
   }
 }

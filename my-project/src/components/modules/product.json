@@ -1,16 +1,16 @@
 {
-  "collectionName": "components_modules_heroes",
+  "collectionName": "components_modules_products",
   "info": {
-    "displayName": "hero",
-    "icon": "arrow-alt-circle-right",
+    "displayName": "product",
+    "icon": "baby-carriage",
     "description": ""
   },
   "options": {},
   "attributes": {
-    "elements": {
+    "products": {
       "type": "component",
       "repeatable": true,
-      "component": "elements.hero"
+      "component": "elements.product"
     },
     "hr": {
       "type": "boolean"

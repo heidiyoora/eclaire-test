@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_elements_double_banners",
+  "info": {
+    "displayName": "double_banner",
+    "icon": "american-sign-language-interpreting"
+  },
+  "options": {},
+  "attributes": {
+    "cta": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "heading": {
+      "type": "string"
+    },
+    "subheading": {
+      "type": "string"
+    },
+    "image_alt": {
+      "type": "string"
+    }
+  }
+}

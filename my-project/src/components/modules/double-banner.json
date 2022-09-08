@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_modules_double_banners",
+  "info": {
+    "displayName": "double_banner",
+    "icon": "american-sign-language-interpreting",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "br": {
+      "type": "boolean",
+      "default": false
+    },
+    "heading": {
+      "type": "string"
+    },
+    "box_elements": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.double-banner"
+    },
+    "circle_elements": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.double-banner"
+    },
+    "hr": {
+      "type": "boolean"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_modules_dynamic_infos",
+  "info": {
+    "displayName": "dynamic_info",
+    "icon": "arrow-alt-circle-up",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "elements": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.dynamic-info"
+    },
+    "hr": {
+      "type": "boolean"
+    }
+  }
+}

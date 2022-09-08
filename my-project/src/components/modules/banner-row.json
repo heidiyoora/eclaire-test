@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_modules_banner_rows",
+  "info": {
+    "displayName": "banner_row",
+    "icon": "arrow-alt-circle-down",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "text"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "heading_url": {
+      "type": "string"
+    },
+    "icon_boolean": {
+      "type": "boolean"
+    },
+    "elements": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.banner-row"
+    },
+    "hr": {
+      "type": "boolean"
+    }
+  }
+}
