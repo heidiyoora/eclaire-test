@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_modules_three_ways",
+  "info": {
+    "displayName": "three_ways",
+    "icon": "arrow-alt-circle-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "title_url": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "hr": {
+      "type": "boolean"
+    },
+    "elements": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.three-ways"
+    },
+    "products": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.product"
+    }
+  }
+}

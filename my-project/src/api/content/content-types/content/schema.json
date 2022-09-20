@@ -69,7 +69,8 @@
         "modules.story-place",
         "modules.taxon-products",
         "modules.two-image",
-        "modules.video"
+        "modules.video",
+        "modules.color-story"
       ]
     }
   }
