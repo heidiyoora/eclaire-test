@@ -1,0 +1,61 @@
+{
+  "collectionName": "components_elements_color_stories",
+  "info": {
+    "displayName": "color_story",
+    "icon": "baby-carriage"
+  },
+  "options": {},
+  "attributes": {
+    "url": {
+      "type": "string"
+    },
+    "body": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "url_title": {
+      "type": "string"
+    },
+    "image_desktop_alt": {
+      "type": "string"
+    },
+    "image_mobile_alt": {
+      "type": "string"
+    },
+    "image_desktop": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "image_mobile": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "position": {
+      "type": "integer"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "text",
+        "product",
+        "image"
+      ]
+    },
+    "product": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.product"
+    }
+  }
+}
