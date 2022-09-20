@@ -30,40 +30,52 @@ module.exports = createCoreController("api::page.page", ({ strapi }) => ({
 
     return entity;
   },
-  createPage: async (ctx) => {
+  async createPage(ctx) {
     const { page_data, content_data } = ctx.request.body;
+    try {
+      const page = await strapi.entityService.create("api::page.page", {
+        data: page_data,
+      });
 
-    const page = await strapi.entityService.create("api::page.page", {
-      data: page_data,
-    });
-
-    if (page && page.id && content_data?.length) {
-      const contents = await strapi
-        .service("api::page.page")
-        .createContent(content_data, page.id);
-      return { page, contents };
+      if (page && page.id && content_data?.length) {
+        // create multiple contents and associate with page
+        const contents = await strapi
+          .service("api::page.page")
+          .createContent(content_data, page.id);
+        return { page, contents };
+      }
+      return page;
+    } catch {
+      ctx.throw(500, err);
     }
-    return page;
   },
-  updatePage: async (ctx) => {
+  async updatePage(ctx) {
     const { id } = ctx.request.params;
     const { page_data, content_data } = ctx.request.body;
+    try {
+      const page = await strapi.entityService.update("api::page.page", id, {
+        data: page_data,
+      });
 
-    const page = await strapi.entityService.update("api::page.page", id, {
-      data: page_data,
-    });
-
-    if (id && content_data?.length) {
-      const contents = await strapi
-        .service("api::page.page")
-        .updateContent(content_data, id);
-      return { page, contents };
+      if (id && content_data?.length) {
+        // update contents
+        const contents = await strapi
+          .service("api::page.page")
+          .updateContent(content_data, id);
+        return { page, contents };
+      }
+      return page;
+    } catch {
+      ctx.throw(500, err);
     }
-    return page;
   },
-  deletePage: async (ctx) => {
+  async deletePage(ctx) {
     const { id } = ctx.request.params;
-    const page = await strapi.entityService.delete("api::page.page", id);
-    return page;
+    try {
+      const page = await strapi.entityService.delete("api::page.page", id);
+      return page;
+    } catch {
+      ctx.throw(500, err);
+    }
   },
 }));
