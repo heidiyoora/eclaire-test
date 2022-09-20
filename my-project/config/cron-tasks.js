@@ -1,33 +1,25 @@
 module.exports = {
   myJob: {
     task: async () => {
-      console.log(new Date());
+      // fetch uncoupled content
+      const contents = await strapi.db.query("api::content.content").findMany({
+        where: {
+          page: null,
+        },
+      });
 
-      // fetch articles to publish
-      const draftArticleToPublish = await strapi.db
-        .query("api::page.page")
-        .findMany({
-          where: {
-            publishedAt: {
-              $null: true,
-            },
-            publish_at: {
-              $lt: new Date(),
-            },
-          },
+      if (contents.length) {
+        // collect content ids in order to delete in bulk
+        const contentIds = contents.map((content) => content.id);
+
+        // delete uncoupled content
+        await strapi.db.query("api::content.content").deleteMany({
+          where: { id: contentIds },
         });
-
-      // update published_at of articles
-      await Promise.all(
-        draftArticleToPublish.map((article) => {
-          return strapi
-            .service("api::page.page")
-            .update(article.id, { data: { publishedAt: new Date() } });
-        })
-      );
+      }
     },
     options: {
-      rule: "*/1 * * * *",
+      rule: "* * * * */0",
       tz: "Europe/Istanbul",
     },
   },
