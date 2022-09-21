@@ -54,11 +54,16 @@ module.exports = createCoreController("api::page.page", ({ strapi }) => ({
   },
   async updatePage(ctx) {
     const { id } = ctx.request.params;
-    // maybe we can update the content_data key being sent and separated by
-    // update vs create? or maybe treat it as an object with update and create keys
-    // that point to arrays?
     const { page_data = null, content_data = null } = ctx.request.body;
     try {
+      if (id && content_data?.length) {
+        // update contents
+        // if there is no ID passed in with the content, it will create a new one
+        const contents = await strapi
+          .service("api::page.page")
+          .updateContent(content_data, id);
+          // error handling?
+      }
       // we will have situations where page data is not updated, so we will have to
       // account for no page data
       let page;
@@ -70,15 +75,6 @@ module.exports = createCoreController("api::page.page", ({ strapi }) => ({
         page = await strapi.entityService.findOne("api::page.page", id, { 
             populate: ['contents.modules']
         });
-      }
-      // more of a check here? - maybe check for content id, since its an update
-      // we also need to handle content create here
-      if (id && content_data?.length) {
-        // update contents
-        const contents = await strapi
-          .service("api::page.page")
-          .updateContent(content_data, id);
-        // return { page, contents };
       }
       // how can we return all of this data in one place?
       // if we go this route, the 'page' returned here is out of date
