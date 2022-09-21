@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_modules_color_stories",
+  "info": {
+    "displayName": "color_story",
+    "icon": "arrow-alt-circle-left",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "elements": {
+      "displayName": "color_story",
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.color-story"
+    },
+    "hr": {
+      "type": "boolean"
+    }
+  }
+}
