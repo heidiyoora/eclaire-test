@@ -32,6 +32,27 @@ npm run build
 yarn build
 ```
 
+## 🐳 Start your project using Docker
+
+- Database creation
+  - Check to see if your PostgresQL is running with `psql -l`
+  - If it's not, and you downloaded it from homebrew, run `brew services start postgres@10`
+  - Create database by running `createdb strapi`
+  - Create superuser role `createuser -s postgres`
+
+- Build and run docker container
+
+    ```bash
+    docker build -t strapi:latest strapi/. --build-arg NODE_ENV=production
+    docker run -it -p 1337:1337 \
+            -e DATABASE_HOST="host.docker.internal" \
+            -e DATABASE_USERNAME="postgres" \
+            -e NODE_ENV="production" \
+            strapi:latest
+    ```
+
+This should now be running on [localhost:1337](http://localhost:1337/).
+
 ## ⚙️ Deployment
 
 Strapi gives you many possible deployment options for your project. Find the one that suits you on the [deployment section of the documentation](https://docs.strapi.io/developer-docs/latest/setup-deployment-guides/deployment.html).
