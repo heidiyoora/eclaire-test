@@ -45,8 +45,8 @@ module.exports = createCoreController("api::page.page", ({ strapi }) => ({
         return { page, contents };
       }
       return page;
-    } catch {
-      ctx.throw(500, err);
+    } catch (error) {
+      ctx.throw(500, error);
     }
   },
   async updatePage(ctx) {
@@ -65,8 +65,8 @@ module.exports = createCoreController("api::page.page", ({ strapi }) => ({
         return { page, contents };
       }
       return page;
-    } catch {
-      ctx.throw(500, err);
+    } catch (error) {
+      ctx.throw(500, error);
     }
   },
   async deletePage(ctx) {
@@ -74,8 +74,8 @@ module.exports = createCoreController("api::page.page", ({ strapi }) => ({
     try {
       const page = await strapi.entityService.delete("api::page.page", id);
       return page;
-    } catch {
-      ctx.throw(500, err);
+    } catch (error) {
+      ctx.throw(500, error);
     }
   },
 }));
