@@ -43,6 +43,9 @@
     },
     "hr": {
       "type": "boolean"
+    },
+    "is_algolia_personalization": {
+      "type": "boolean"
     }
   }
 }
