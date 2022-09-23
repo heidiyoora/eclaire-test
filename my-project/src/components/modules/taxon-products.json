@@ -46,6 +46,10 @@
     },
     "is_algolia_personalization": {
       "type": "boolean"
+    },
+    "product_limit": {
+      "type": "integer",
+      "default": 4
     }
   }
 }
