@@ -43,7 +43,8 @@ yarn build
 - Build and run docker container
 
     ```bash
-    docker build -t strapi:latest strapi/. --build-arg NODE_ENV=production
+    # Assuming you are at the same directory as Dockerfile
+    docker build -t strapi:latest . --build-arg NODE_ENV=production
     docker run -it -p 1337:1337 \
             -e DATABASE_HOST="host.docker.internal" \
             -e DATABASE_USERNAME="postgres" \
