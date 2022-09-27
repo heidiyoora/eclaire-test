@@ -8,27 +8,35 @@ const { createCoreController } = require("@strapi/strapi").factories;
 
 module.exports = createCoreController("api::page.page", ({ strapi }) => ({
   async find(ctx) {
-    // api/pages?filters[url][$eq]=URL
     const { query } = ctx;
 
-    const entity = await super.find({
-      ...ctx,
-      query: {
-        ...query,
-        populate: [
-          // create populate query for page and content specific data
-          // will probably need to add a few more
-          "socialImage",
-          "contents.modules.image",
-          "contents.modules.elements",
-          "contents.modules.products",
-          "contents.modules.box_elements",
-          "contents.modules.circle_elements",
-        ],
-      },
+    const { results, meta } = await strapi.service("api::page.page").find({
+      ...strapi.service("api::page.page").getFullPopulateObject("api::page.page"),
+      ...query,
     });
 
-    return entity;
+    const sanitizedEntities = await this.sanitizeOutput(results, ctx);
+    // TODO: this will return a list of one entities
+    // should we update this to only return one? would we only be using this
+    // as a way to query by url vs findOne by id?
+    // this is current functionality so leaving for now
+    return {
+      data: sanitizedEntities,
+      meta,
+    };
+  },
+  async findOne(ctx) {
+    const { id } = ctx.params;
+
+    const entity = await strapi.service("api::page.page").findOne(id, {
+      ...strapi.service("api::page.page").getFullPopulateObject("api::page.page")
+    });
+
+    const sanitizedEntity = await this.sanitizeOutput(entity, ctx);
+    // returns one entity by id
+    return {
+      data: sanitizedEntity
+    };
   },
   async createPage(ctx) {
     const { page_data, content_data } = ctx.request.body;
