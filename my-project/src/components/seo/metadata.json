@@ -1,22 +1,22 @@
 {
   "collectionName": "components_seo_metadata",
   "info": {
-    "displayName": "Metadata",
+    "displayName": "meta_data",
     "icon": "address-card",
     "description": ""
   },
   "options": {},
   "attributes": {
-    "MetaTitle": {
+    "title": {
       "type": "string",
       "required": true
     },
-    "MetaDescription": {
+    "description": {
       "type": "text",
       "required": true,
       "maxLength": 170
     },
-    "MetaTags": {
+    "tags": {
       "type": "string"
     }
   }
