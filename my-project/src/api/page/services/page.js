@@ -42,9 +42,12 @@ module.exports = createCoreService("api::page.page", ({ strapi }) => ({
     return model.attributes;
   },
   getFullPopulateObject(modelUid, maxDepth = 20) {
+    // TODO: this is set up to be dynamic, but is currently only being used
+    // by the Page controller, we can revisit as we find the need
     if (maxDepth <= 1) {
       return true;
     }
+
     if (modelUid === "admin::user") {
       return undefined;
     }
