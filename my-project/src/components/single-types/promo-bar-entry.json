@@ -11,13 +11,13 @@
       "type": "string",
       "required": true
     },
-    "start": {
+    "starts_at": {
       "type": "datetime"
     },
-    "end": {
+    "ends_at": {
       "type": "datetime"
     },
-    "ignoreDates": {
+    "ignore_dates": {
       "type": "boolean",
       "default": false
     }

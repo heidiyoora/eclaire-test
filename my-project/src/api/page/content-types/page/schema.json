@@ -40,7 +40,7 @@
       },
       "type": "datetime"
     },
-    "hierarchicalMenu": {
+    "hierarchical_menu": {
       "pluginOptions": {
         "versions": {
           "versioned": false
@@ -102,7 +102,7 @@
         "neon"
       ]
     },
-    "socialImage": {
+    "social_image": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -118,7 +118,7 @@
         }
       }
     },
-    "inLeScoopModule": {
+    "in_le_scoop_module": {
       "pluginOptions": {
         "versions": {
           "versioned": true
@@ -127,7 +127,7 @@
       "type": "boolean",
       "default": false
     },
-    "innerPageNavigation": {
+    "inner_page_navigation": {
       "pluginOptions": {
         "versions": {
           "versioned": true
@@ -136,7 +136,7 @@
       "type": "boolean",
       "default": false
     },
-    "metaData": {
+    "meta_data": {
       "type": "component",
       "repeatable": false,
       "pluginOptions": {

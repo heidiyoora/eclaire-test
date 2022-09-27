@@ -26,7 +26,7 @@
       "target": "api::page.page",
       "inversedBy": "contents"
     },
-    "publishDate": {
+    "publish_date": {
       "pluginOptions": {
         "versions": {
           "versioned": true
